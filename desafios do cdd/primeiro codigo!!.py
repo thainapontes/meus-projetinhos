@@ -1,0 +1,6 @@
+nome = input('Digite seu nome:')
+print(nome)
+idade = int(input('Qual sua idade:'))
+print(idade)
+ondevocemora= input('onde voce mora?')
+print(f'Olá {nome},{ondevocemora} é perto daqui')
