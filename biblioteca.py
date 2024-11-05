@@ -42,3 +42,18 @@ def numero_primo(numero):
             if(numero%x==0):
                 return numero, "Não é primo."
                 return numero, "É primo"
+
+def viacep(cep):
+    import requests
+    cep=(input("Qual o cep?"))
+    if len(cep)==8:
+        link=f'https://viacep.com.br/ws/{cep}/json'
+        requisicao=requests.get(link)
+        print(requisicao)
+        dic_requisicao=requisicao.json()
+        uf=dic_requisicao['uf']
+        cidade=dic_requisicao['localidade']
+        bairro=dic_requisicao['bairro']
+        print(dic_requisicao)
+    else:
+        print("CEP INVÁLIDO.")

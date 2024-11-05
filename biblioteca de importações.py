@@ -18,3 +18,6 @@ lista(1,2,3,4,5,5,2)
 
 from biblioteca import numero_primo
 print(numero_primo(4)) #assim é para printar o return
+
+from biblioteca import viacep
+viacep(52081-530)
